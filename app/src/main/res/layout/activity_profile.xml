@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Choose your favourite programming language!"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textSize="22sp"/>
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radioJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioCpp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="20sp" />
+        <RadioButton
+            android:id="@+id/Python"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="20sp" />
+        <RadioButton
+            android:id="@+id/Javascript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Javascript"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="20sp" />
+        <RadioButton
+            android:id="@+id/Ruby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ruby"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voted"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_margin="7dp"
+        android:onClick="onclickbuttonMethod"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:background="@drawable/rounded_button_transparent"
+
+       />
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</LinearLayout>
